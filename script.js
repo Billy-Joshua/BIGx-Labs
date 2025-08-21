@@ -48,3 +48,19 @@ form.addEventListener("submit", function (e) {
     message.textContent = "❌ Invalid username or password";
   }
 });
+// Simulated login role
+let userRole = "admin"; // change this to "user" and see what happens
+
+if (userRole === "admin") {
+  console.log("✅ Welcome, Admin!");
+  console.log("Here are your options:");
+  console.log("- Manage users");
+  console.log("- View reports");
+  console.log("- Delete posts");
+} else {
+  console.log("👋 Welcome, User!");
+  console.log("Here are your options:");
+  console.log("- View your profile");
+  console.log("- Create a post");
+}
+
