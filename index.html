@@ -4,11 +4,16 @@
     <h2> still learing javascript</h2>
     <p id="demo"></p>
     <script>
-      const price1 = 1000;
-      const price2 = 5000;
-      let total = price1 + price2;
-      document.getElementById("demo").innerHTML = "the total is: " + total;
+      //create an object:
+      const car = {type:"fist",model:"500",color:"white"};
+      // change a property
+      car.color= "red";
+      // add a property
+      car.owner= "johnson";
+      // display the properties
+      document.getElementById("demo").innerHTML =" car owner is " + car.owner;
+      
+
     </script>
   </body>
-
-</html> 
+</html>
