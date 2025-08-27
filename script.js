@@ -1,4 +1,15 @@
-let text1 ="A"
-let text2 ="B"
-let result = text1 < text2; // returns true because "A" is less than "B"
-document.getElementById("demo2").innerHTML ="is A less than B?" + result;       
+document.getElementById("loginForm").addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  let username = document.getElementById("username").value;
+  let password = document.getElementById("password").value;
+  let errorMessage = document.getElementById("error-message");
+
+  // Example: fixed username and password
+  if (username === "admin" && password === "1234") {
+    // Redirect to dashboard
+    window.location.href = "dashboard.html";
+  } else {
+    errorMessage.textContent = "❌ Invalid username or password";
+  }
+});

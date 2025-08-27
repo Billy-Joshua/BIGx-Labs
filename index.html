@@ -1,26 +1,30 @@
 <!DOCTYPE html>
-<html>
-  <body>
-    <h2> still learing javascript</h2>
-    <p id="demo"></p>
-    <p id ="demo2"></p>
-    <script>
-      //create an object:
-      const car = {type:"fist",model:"500",color:"white"};
-      // change a property
-      car.color= "red";
-      // add a property
-      car.owner= "johnson";
-      // display the properties
-      document.getElementById("demo").innerHTML =" car owner is " + car.owner; 
-      // yes i may join inftronic system engineering doesnt mean i forgot my purpose to help cancer peaple
-      //  I still carry that with me maybe it can take time but one thing ill do it my heart hunger for it 
-      //  I will find a way to make it happen i promis 
-let text1 ="A"
-let text2 ="B"
-let result = text1 < text2; // returns true because "A" is less than "B"
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="login-box">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <div class="input-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" required>
+      </div>
 
-document.getElementById("demo2").innerHTML ="is A less than B?" + result;
-</script>
-  </body>
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" required>
+      </div>
+
+      <button type="submit">Login</button>
+      <p id="error-message"></p>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
 </html>
