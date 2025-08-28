@@ -8,49 +8,7 @@
 <p id="demo3"></p>
 <p id="demo4"></p>
 <p id="demo5"></p>
-<script>
-    // function to compute the product of two numbers
-    function myFunction(p1, p2) {
-        return  p1 * p2;
-    }
-let result = myFunction(4,3);
-document.getElementById("demo").innerHTML ="the result is:" + result;
-
-// function to convert Fahrenheit to Celsius
-
-function toCelisius(f) {
-    return(5/9) *(f-32);
-}
-
-let value = toCelisius(77);
-document.getElementById("billy").innerHTML =value;
-
-// myFunction computes the product of a and b
-
-myFunction = (a, b) => a * b;
-
-let answer = myFunction(4, 5);
-document.getElementById("demo").innerHTML = "The product is: " + answer;
-
-// javascript function 
-
- let text =  " outside" + typeof carName;
- document.getElementById("demo3").innerHTML = text;
-
- function myFunction() {
-  let carName ="mercedes benz"
-  let text =" inside:" + typeof carName + " " + carName;
-  document.getElementById("demo4").innerHTML = text;
- }
- function myFunction() {
-  let carName ="mercedes benz"
-  let text =" inside:" + typeof carName + " " + carName;
-  document.getElementById("demo4").innerHTML = text;
- }
- function greet(name,age) {
-     return"hello" +name +"!you are" + age+" years old.";
- }
- document.getElementById("demo5").innerHTML =greet("john", 23);
-</script>
-  </body>
+<!-- Link external JS -->
+    <script src="script.js"></script>
+</body>
 </html>
