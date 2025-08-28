@@ -1,30 +1,56 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login Page</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="login-box">
-    <h2>Login</h2>
-    <form id="loginForm">
-      <div class="input-group">
-        <label for="username">Username</label>
-        <input type="text" id="username" required>
-      </div>
+<!DOCTYPE html> 
+<html>
+  <body>
+    <h1> still learning javascript no sleep till i make it </h1>
+<p id="demo"></p> 
+<p id="billy"></p> 
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+<p id="demo5"></p>
+<script>
+    // function to compute the product of two numbers
+    function myFunction(p1, p2) {
+        return  p1 * p2;
+    }
+let result = myFunction(4,3);
+document.getElementById("demo").innerHTML ="the result is:" + result;
 
-      <div class="input-group">
-        <label for="password">Password</label>
-        <input type="password" id="password" required>
-      </div>
+// function to convert Fahrenheit to Celsius
 
-      <button type="submit">Login</button>
-      <p id="error-message"></p>
-    </form>
-  </div>
+function toCelisius(f) {
+    return(5/9) *(f-32);
+}
 
-  <script src="script.js"></script>
-</body>
+let value = toCelisius(77);
+document.getElementById("billy").innerHTML =value;
+
+// myFunction computes the product of a and b
+
+myFunction = (a, b) => a * b;
+
+let answer = myFunction(4, 5);
+document.getElementById("demo").innerHTML = "The product is: " + answer;
+
+// javascript function 
+
+ let text =  " outside" + typeof carName;
+ document.getElementById("demo3").innerHTML = text;
+
+ function myFunction() {
+  let carName ="mercedes benz"
+  let text =" inside:" + typeof carName + " " + carName;
+  document.getElementById("demo4").innerHTML = text;
+ }
+ function myFunction() {
+  let carName ="mercedes benz"
+  let text =" inside:" + typeof carName + " " + carName;
+  document.getElementById("demo4").innerHTML = text;
+ }
+ function greet(name,age) {
+     return"hello" +name +"!you are" + age+" years old.";
+ }
+ document.getElementById("demo5").innerHTML =greet("john", 23);
+</script>
+  </body>
 </html>
