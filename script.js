@@ -1,42 +1,45 @@
- // function to compute the product of two numbers
-    function myFunction(p1, p2) {
-        return  p1 * p2;
-    }
-let result = myFunction(4,3);
-document.getElementById("demo").innerHTML ="the result is:" + result;
 
-// function to convert Fahrenheit to Celsius
+// still learning js thought creating object
+const person ={
+    firstname:"billy",
+    lastname:"joshua",
+    age:25,
+    eyecolor:"browon"
+};
+document.getElementById("demo2").innerHTML = person.firstname +" is " + person.age + " years old and has " + person.eyecolor + " eyes.";
 
-function toCelisius(f) {
-    return(5/9) *(f-32);
+const person1={};
+    person1.firstname="john",
+    person1.lastname="doe",
+    person1.age=30,
+    person1.eyecolor="blue"
+
+    // DISPLAY data from object
+document.getElementById("demo3").innerHTML = person1.firstname +" is " + person1.age + " years old and has " + person1.eyecolor + " eyes.";
+// create an object
+
+const people = new Object ({
+        firstname: "john",
+        lastname: "doe",
+        age: 50,
+        id:5566,
+        eyecolor: "blue",
+        fullname: function(){
+            return this.firstname + " " + this.lastname;
+        }
+});
+// display object content
+document.getElementById("demo4").innerHTML = people.fullname() + " is " + people.age + " years old and has " + people.eyecolor + " eyes.";
+
+// constructor function for person object
+function person3(first,last,age,eye){
+    this.firstName = first;
+    this.lastName = last;
+    this.age =age;
+    this.eyeColor = eye;
 }
+// create a new person object
+const myFather = new person3("john","doe",50,"blue");
 
-let value = toCelisius(77);
-document.getElementById("billy").innerHTML =value;
-
-// myFunction computes the product of a and b
-
-myFunction = (a, b) => a * b;
-
-let answer = myFunction(4, 5);
-document.getElementById("demo").innerHTML = "The product is: " + answer;
-
-// javascript function 
-
- let text =  " outside" + typeof carName;
- document.getElementById("demo3").innerHTML = text;
-
- function myFunction() {
-  let carName ="mercedes benz"
-  let text =" inside:" + typeof carName + " " + carName;
-  document.getElementById("demo4").innerHTML = text;
- }
- function myFunction() {
-  let carName ="mercedes benz"
-  let text =" inside:" + typeof carName + " " + carName;
-  document.getElementById("demo4").innerHTML = text;
- }
- function greet(name,age) {
-     return"hello" +name +"!you are" + age+" years old.";
- }
- document.getElementById("demo5").innerHTML =greet("john", 23);
+// display age
+document.getElementById("demo5").innerHTML = "my father is " + myFather.age + ".";
