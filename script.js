@@ -43,3 +43,28 @@ const myFather = new person3("john","doe",50,"blue");
 
 // display age
 document.getElementById("demo5").innerHTML = "my father is " + myFather.age + ".";
+
+// javascript strings
+let carName1 = "BMWS";
+let carName2 = "mercedes benz";
+let text = "JOSHUA BILLY ";
+document.getElementById("demo5").innerHTML = text;
+document.getElementById("demo6").innerHTML = carName1 + " " + carName2;
+
+// still  js string manipulation
+
+let answer1 = "it's alright";
+let answer2 = "he is called 'Johnn'";
+let answer3 = "he is called 'Joshua'";
+
+document.getElementById("demo7").innerHTML =answer1 + "<br>" + answer2 + "<br>" + answer3;
+document.getElementById("demo8").innerHTML = "hello joshua";
+// escape character
+let text1 =
+
+`The quick
+brown fox
+jumps over
+the lazy dog`;
+
+document.getElementById("demo9").innerHTML = text1;
