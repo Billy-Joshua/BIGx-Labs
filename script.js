@@ -59,6 +59,7 @@ let answer3 = "he is called 'Joshua'";
 
 document.getElementById("demo7").innerHTML =answer1 + "<br>" + answer2 + "<br>" + answer3;
 document.getElementById("demo8").innerHTML = "hello joshua";
+
 // escape character
 let text1 =
 
@@ -68,3 +69,12 @@ jumps over
 the lazy dog`;
 
 document.getElementById("demo9").innerHTML = text1;
+let x ="John";
+let y =new String("john");
+   document.getElementById("demo10").innerHTML = typeof x +"<br>" + typeof y;
+   // comparing string objects
+
+   let X ="joshua billy";
+    let Y = new String("joshua billy");
+    document.getElementById("demo11").innerHTML = (X==Y);
+
