@@ -77,4 +77,24 @@ let y =new String("john");
    let X ="joshua billy";
     let Y = new String("joshua billy");
     document.getElementById("demo11").innerHTML = (X==Y);
+ let firstName ="francine";
+ let lastName ="mukamana";
+ let world = `welcome ${firstName} ${lastName}!`;
+ document.getElementById("demo12").innerHTML = world;
 
+ let price =10;
+ let VAT =0.25;
+ let total =`Total: ${(price *(1+ VAT)).toFixed(2)}`;
+ document.getElementById("demo13").innerHTML = total;
+
+ let header = "free cancer to generation";
+let tags = ["free cancer", "back home", "free education", "free health care"];
+
+let html = `<h2>${header}</h2><ul>`;
+
+for (const x of tags) {
+  html += `<li>${x}</li>`;
+}
+
+html += `</ul>`;
+document.getElementById("demo14").innerHTML = html;
