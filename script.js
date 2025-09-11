@@ -98,3 +98,19 @@ for (const x of tags) {
 
 html += `</ul>`;
 document.getElementById("demo14").innerHTML = html;
+let Z = 999999999999999;
+let T = 9999999999999999;
+document.getElementById("demo15").innerHTML = Z + "<br>" + T;
+// different ways to write numbers
+
+let K = 100 / "Apple";
+document.getElementById("demo15").innerHTML = isNaN(K);
+// infinity
+
+ let myNumber = 2;
+ let txt1 = "";
+ while (myNumber != Infinity) {
+    myNumber = myNumber * myNumber;
+    txt1 = txt1 + myNumber + "<br>";
+}
+    document.getElementById("demo16").innerHTML = txt1;
