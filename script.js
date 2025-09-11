@@ -114,3 +114,5 @@ document.getElementById("demo15").innerHTML = isNaN(K);
     txt1 = txt1 + myNumber + "<br>";
 }
     document.getElementById("demo16").innerHTML = txt1;
+
+    // tomorrow will be #day8 with js arrays and more
