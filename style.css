@@ -36,3 +36,25 @@ p {
     color: rgb(240, 244, 240);
     text-align: auto;
 }
+a {
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+footer a {
+    color: #ffcc00;
+}
+footer a:hover {
+    color: #ffff66;
+}

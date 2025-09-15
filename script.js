@@ -66,7 +66,7 @@ let text1 =
 `The quick
 brown fox
 jumps over
-the lazy dog`;
+the lazy dog`; 
 
 document.getElementById("demo9").innerHTML = text1;
 let x ="John";
@@ -115,4 +115,9 @@ document.getElementById("demo15").innerHTML = isNaN(K);
 }
     document.getElementById("demo16").innerHTML = txt1;
 
-    // tomorrow will be #day8 with js arrays and more
+    // tomorrow will be #day8 with js arrays and moregit 
+    let myArray = new Array("banana", "apple", "orange", "mango");
+    document.getElementById("demo17").innerHTML = myArray + "<br>" + myArray.length;        
+    // accessing array elements
+    let fruit = myArray[0];
+    document.getElementById("demo18").innerHTML = fruit;
