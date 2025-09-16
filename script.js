@@ -116,8 +116,16 @@ document.getElementById("demo15").innerHTML = isNaN(K);
     document.getElementById("demo16").innerHTML = txt1;
 
     // tomorrow will be #day8 with js arrays and moregit 
-    let myArray = new Array("banana", "apple", "orange", "mango");
-    document.getElementById("demo17").innerHTML = myArray + "<br>" + myArray.length;        
-    // accessing array elements
-    let fruit = myArray[0];
-    document.getElementById("demo18").innerHTML = fruit;
+   const cars =["BMW","Mercedes","Audi","Toyota"];
+   cars[0] ="KIA solent 2024";
+   
+   document.getElementById("demo17").innerHTML = cars;
+   const cars1 =[];
+   cars1[0] ="BMW";
+   cars1[1] ="Mercedes";
+   cars1[2] ="Audi";
+   cars1[3] ="Toyota";
+   document.getElementById("demo18").innerHTML = cars[1];
+   const fruits = ["banana","mango","orange","apple"];
+   let myList =fruits.toString();
+   document.getElementById("demo19").innerHTML = myList;
