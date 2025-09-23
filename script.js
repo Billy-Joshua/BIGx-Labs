@@ -140,3 +140,25 @@ document.getElementById("demo15").innerHTML = isNaN(K);
    let size =  cars2.length;
    document.getElementById("demo20").innerHTML = size;
    document.getElementById("demo21").innerHTML = cars2[cars2.length-1];
+
+   // looping array elements 
+  const computers =["mac","dell","hp","lenovo"];
+  let  flen = computers.length;
+  let text2 ="<ul>";
+  for (let i=0; i < flen;i++){
+    text2 +="<li>" +computers[i] +"</li>";
+  }
+  text2 +="</ul>";
+
+    document.getElementById("demo22").innerHTML = text2;
+
+    // array forEach() method
+    const computers1 =["mac","dell","hp","lenovo"];
+    let text3 = "<ul>";
+    computers1.forEach(myFunction);
+    text3 += "</ul>";
+
+    function myFunction(value){
+        text3 +="<li>" + value + "</li>";
+    }
+    
