@@ -161,4 +161,12 @@ document.getElementById("demo15").innerHTML = isNaN(K);
     function myFunction(value){
         text3 +="<li>" + value + "</li>";
     }
+    // adding array elements
     
+    const cancers =["lung","breast","prostate","skin"];
+    document.getElementById ("demo23").innerHTML = cancers;
+
+    function myFunction(){
+        cancers.push ("brain cancer");
+        document.getElementById  ("demo23").innerHTML = cancers;
+    }
