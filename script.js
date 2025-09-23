@@ -118,6 +118,7 @@ document.getElementById("demo15").innerHTML = isNaN(K);
     // tomorrow will be #day8 with js arrays and moregit 
    const cars =["BMW","Mercedes","Audi","Toyota"];
    cars[0] ="KIA solent 2024";
+   cars[1] ="Range rover";
    
    document.getElementById("demo17").innerHTML = cars;
    const cars1 =[];
@@ -126,6 +127,23 @@ document.getElementById("demo15").innerHTML = isNaN(K);
    cars1[2] ="Audi";
    cars1[3] ="Toyota";
    document.getElementById("demo18").innerHTML = cars[1];
+
+   
    const fruits = ["banana","mango","orange","apple"];
    let myList =fruits.toString();
    document.getElementById("demo19").innerHTML = myList;
+   
+   // array element can be object 
+   // array properties and methods
+   // array length PROPERTY
+   const cars2 =["BMW","Mercedes","Audi","Toyota","Range rover"];
+   let size =  cars2.length;
+   document.getElementById("demo20").innerHTML = size;
+   document.getElementById("demo21").innerHTML = cars2[cars2.length-1];
+   
+;
+
+
+   
+
+
