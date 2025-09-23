@@ -140,10 +140,3 @@ document.getElementById("demo15").innerHTML = isNaN(K);
    let size =  cars2.length;
    document.getElementById("demo20").innerHTML = size;
    document.getElementById("demo21").innerHTML = cars2[cars2.length-1];
-   
-;
-
-
-   
-
-
