@@ -167,6 +167,61 @@ document.getElementById("demo15").innerHTML = isNaN(K);
     document.getElementById ("demo23").innerHTML = diseases;
 
     function addDisease(){
-        diseases.push("cancer");
+        diseases.push("colona cancer");
         document.getElementById ("demo23").innerHTML = diseases;
     }
+    function addBloodCancer(){
+        diseases.push("blood cancer");
+        document.getElementById ("demo23").innerHTML = diseases;
+    }
+    const BMWModels =["x1","x3","x5","x7"];
+    const MercedesModels =["glc","gle","gls","eqs"];
+    const AudiModels =["q3","q5","q7","q8"];
+    const ToyotaModels =["rav4","highlander","land cruiser","prado"];
+    const RangeRoverModels =["velar","sport","evoque","autobiography"];
+    document.getElementById("demo24").innerHTML = BMWModels;
+    document.getElementById("demo25").innerHTML = MercedesModels;   
+    document.getElementById("demo26").innerHTML = AudiModels;
+    document.getElementById("demo27").innerHTML = ToyotaModels;
+    document.getElementById("demo28").innerHTML = RangeRoverModels;
+
+    function addBMWModels(){
+        BMWModels.push("i4","i7","m3","m4");
+        document.getElementById("demo24").innerHTML = BMWModels;
+    }
+    function addMercedesModels(){
+        MercedesModels.push("amg gt","amg c63","amg e63","amg s63");
+        document.getElementById("demo25").innerHTML = MercedesModels;   
+    }
+    function addAudiModels(){
+        AudiModels.push("rs3","rs5","rs7","rs8");
+        document.getElementById("demo26").innerHTML = AudiModels;
+    }
+    function addToyotaModels(){
+        ToyotaModels.push("sequoia","4runner","fj cruiser","supra");
+        document.getElementById("demo27").innerHTML = ToyotaModels;
+    }
+    function addRangeRoverModels(){
+        RangeRoverModels.push("velar","sport","evoque","autobiography");
+        document.getElementById("demo28").innerHTML = RangeRoverModels;
+    }
+    //js nested javascript objects and arrays
+    let P ="";
+    const myobj ={
+        name:"joshua Billy",
+        age:22,
+        cars3:[
+            {name:"BMW", models:["x1","x3","x5","x7"]},
+            {name:"Mercedes", models:["glc","gle","gls","eqs"]},
+            {name:"Audi", models:["q3","q5","q7","q8"]},
+            {name:"Toyota", models:["rav4","highlander","land cruiser","prado"]},
+            {name:"Range rover", models:["velar","sport","evoque","autobiography"]},
+        ]
+    }
+    for (let i in myobj.cars3){
+        P +="<h2>" + myobj.cars3[i].name +"</h2>";
+        for (let j in myobj.cars3[i].models){
+            P += + myobj.cars3[i].models[j] + "<br>";
+        }
+        }
+        document.getElementById("demo29").innerHTML = P;
