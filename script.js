@@ -198,3 +198,16 @@ document.getElementById("demo15").innerHTML = isNaN(K);
         }
         }
         document.getElementById("demo29").innerHTML = P;
+
+// js array push() method   
+
+        let cart = ["Milk", "Bread"];
+cart.push("Eggs"); 
+cart.pop();
+cart.push("Sugar");
+console.log(cart); 
+document.getElementById("demo30").innerHTML = cart;
+
+let products =["phone","laptop","tablet"];
+console.log(products.includes("laptop"));
+document.getElementById("demo31").innerHTML = products.includes("laptop");
