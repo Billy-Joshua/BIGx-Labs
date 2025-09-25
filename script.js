@@ -211,3 +211,6 @@ document.getElementById("demo30").innerHTML = cart;
 let products =["phone","laptop","tablet"];
 console.log(products.includes("laptop"));
 document.getElementById("demo31").innerHTML = products.includes("laptop");
+// javascript set
+const letters = new Set(["a","b","c","d","e"]);
+document.getElementById("demo32").innerHTML = "the set has "+ letters.size +" values.";
