@@ -177,27 +177,7 @@ document.getElementById("demo15").innerHTML = isNaN(K);
     const BMWModels =["x1","x3","x5","x7"];
     document.getElementById("demo24").innerHTML = BMWModels;
    
-    //js nested javascript objects and arrays 
-    // and ill back on this tommorow
-    let P ="";
-    const myobj ={
-        name:"joshua Billy",
-        age:22,
-        cars3:[
-            {name:"BMW", models:["x1","x3","x5","x7"]},
-            {name:"Mercedes", models:["glc","gle","gls","eqs"]},
-            {name:"Audi", models:["q3","q5","q7","q8"]},
-            {name:"Toyota", models:["rav4","highlander","land cruiser","prado"]},
-            {name:"Range rover", models:["velar","sport","evoque","autobiography"]},
-        ]
-    }
-    for (let i in myobj.cars3){
-        P +="<h2>" + myobj.cars3[i].name +"</h2>";
-        for (let j in myobj.cars3[i].models){
-            P += + myobj.cars3[i].models[j] + "<br>";
-        }
-        }
-        document.getElementById("demo29").innerHTML = P;
+    //js nested javascript objects and arrays
 
 // js array push() method   
 
@@ -214,3 +194,50 @@ document.getElementById("demo31").innerHTML = products.includes("laptop");
 // javascript set
 const letters = new Set(["a","b","c","d","e"]);
 document.getElementById("demo32").innerHTML = "the set has "+ letters.size +" values.";
+// DAY 11 WITH JAVASCRIPT 
+const numbers = [2,4,6,8,10];
+const doubled = numbers.map(x=> x*4); 
+document.getElementById("demo33").innerHTML = doubled;
+const taxes = [ 1000,2000,500];
+const finaltaxes = taxes.map(p=> p*1.18);
+document.getElementById("demo34").innerHTML = finaltaxes;
+ 
+const scores=[60,30,80,90,40,100];
+const over60 = scores.filter(scores => scores>60);
+document.getElementById("demo35").innerHTML = over60;
+// create map in js
+const goods = new Map([
+    ["item1",400],
+    ["item2",500],
+    ["item3",600]
+]);
+let goodsList ="";
+goods.forEach(function(value,key){
+    goodsList +=key + " = " +value + "<br>";
+})
+document.getElementById("demo36").innerHTML = goodsList;
+// Create a WeakMap to store visit counts
+const visitsCount = new WeakMap();
+
+// Create Visitor Objects
+const John = {name:"John", age:40};
+const Paul = {name:"Paul", age:41};
+const Ringo = {name:"Ringo", age:42};
+const George = {name:"George", age:43};
+
+// Track visits
+track(Paul);
+track(Ringo);  
+track(Paul);
+track(Paul);
+track(John);
+
+// Function to track visitors
+function track(visitor) {
+  let count = visitsCount.get(visitor) || 0;
+  count++;
+  visitsCount.set(visitor, count);
+  text += visitor.name + ", age " + visitor.age + ", has visited " + count + " time(s).<br>";
+}
+
+document.getElementById("demo37").innerHTML = text;
