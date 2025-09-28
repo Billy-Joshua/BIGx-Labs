@@ -241,4 +241,10 @@ function track(visitor) {
 }
 
 document.getElementById("demo37").innerHTML = text;
-// 
+//
+let text4 = "";
+for (const [key, value] of goods.entries()) {
+  text4 += key + ' = ' + value + '<br>';
+}
+document.getElementById("demo38").innerHTML = text4;
+// DAY 12 WITH JAVASCRIPT
