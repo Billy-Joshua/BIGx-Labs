@@ -247,4 +247,37 @@ for (const [key, value] of goods.entries()) {
   text4 += key + ' = ' + value + '<br>';
 }
 document.getElementById("demo38").innerHTML = text4;
-// DAY 12 WITH JAVASCRIPT
+// DAY 12 WITH JAVASCRIPTls
+const person4 ={
+    firstname:"billy",
+    lastname:"joshua",
+    age:25,
+    eyecolor:"brown"
+};
+let txt5 ="";
+for (const [key, value] of Object.entries(person4)) {
+  txt5 += key + ' = ' + value + '<br>';
+}
+document.getElementById("demo39").innerHTML = txt5;
+// object methods
+const person5 ={
+    firstname:"billy",
+    lastname:"joshua",
+    middlename:"ishimwe",
+    age:25,
+    eyecolor:"brown",
+    fullname: function() {
+        return this.firstname + " " +   this.middlename + " " + this.lastname;
+    }
+}; 
+document.getElementById("demo40").innerHTML = person5.fullname();
+// javascript math
+document.getElementById("demo").innerHTML = 
+"<p><b>Math.E:</b> " + Math.E + "</p>" +
+"<p><b>Math.PI:</b> " + Math.PI + "</p>" +
+"<p><b>Math.SQRT2:</b> " + Math.SQRT2 + "</p>" +
+"<p><b>Math.SQRT1_2:</b> " + Math.SQRT1_2 + "</p>" +
+"<p><b>Math.LN2:</b> " + Math.LN2 + "</p>" +
+"<p><b>Math.LN10:</b> " + Math.LN10 + "</p>" +
+"<p><b>Math.LOG2E:</b> " + Math.LOG2E + "</p>" +
+"<p><b>Math.Log10E:</b> " + Math.LOG10E + "</p>";
