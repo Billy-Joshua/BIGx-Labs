@@ -272,7 +272,7 @@ const person5 ={
 }; 
 document.getElementById("demo40").innerHTML = person5.fullname();
 // javascript math
-document.getElementById("demo").innerHTML = 
+document.getElementById("demo41").innerHTML = 
 "<p><b>Math.E:</b> " + Math.E + "</p>" +
 "<p><b>Math.PI:</b> " + Math.PI + "</p>" +
 "<p><b>Math.SQRT2:</b> " + Math.SQRT2 + "</p>" +
@@ -281,3 +281,7 @@ document.getElementById("demo").innerHTML =
 "<p><b>Math.LN10:</b> " + Math.LN10 + "</p>" +
 "<p><b>Math.LOG2E:</b> " + Math.LOG2E + "</p>" +
 "<p><b>Math.Log10E:</b> " + Math.LOG10E + "</p>";
+// random number
+Math.floor(Math.random()* 10);
+document.getElementById("demo42").innerHTML = Math.floor(Math.random() * 10);
+ 
