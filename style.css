@@ -69,18 +69,10 @@ a:hover {
     text-decoration: underline;
     color: #ffcc00;
 }
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: white;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-footer a {
-    color: #ffcc00;
-}
-footer a:hover {
-    color: #ffff66;
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
 }
