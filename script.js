@@ -284,5 +284,11 @@ document.getElementById("demo41").innerHTML =
 // random number
 Math.floor(Math.random()* 10);
 document.getElementById("demo42").innerHTML = Math.floor(Math.random() * 10);
+// 
+let text = "More than 1000 times";
+let pattern = /[0-9]/g;
 
+let result = text.match(pattern);
+
+document.getElementById("demo43").innerHTML = result;
  
