@@ -289,6 +289,4 @@ let text = "More than 1000 times";
 let pattern = /[0-9]/g;
 
 let result = text.match(pattern);
-
-document.getElementById("demo43").innerHTML = result;
  
