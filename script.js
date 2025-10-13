@@ -177,10 +177,7 @@ document.getElementById("demo15").innerHTML = isNaN(K);
     const BMWModels =["x1","x3","x5","x7"];
     document.getElementById("demo24").innerHTML = BMWModels;
    
-    //js nested javascript objects and arrays
-
 // js array push() method   
-
         let cart = ["Milk", "Bread"];
 cart.push("Eggs"); 
 cart.pop();
@@ -259,6 +256,7 @@ for (const [key, value] of Object.entries(person4)) {
   txt5 += key + ' = ' + value + '<br>';
 }
 document.getElementById("demo39").innerHTML = txt5;
+
 // object methods
 const person5 ={
     firstname:"billy",
@@ -269,7 +267,7 @@ const person5 ={
     fullname: function() {
         return this.firstname + " " +   this.middlename + " " + this.lastname;
     }
-}; 
+}
 document.getElementById("demo40").innerHTML = person5.fullname();
 // javascript math
 document.getElementById("demo41").innerHTML = 
@@ -281,12 +279,8 @@ document.getElementById("demo41").innerHTML =
 "<p><b>Math.LN10:</b> " + Math.LN10 + "</p>" +
 "<p><b>Math.LOG2E:</b> " + Math.LOG2E + "</p>" +
 "<p><b>Math.Log10E:</b> " + Math.LOG10E + "</p>";
-// random number
-Math.floor(Math.random()* 10);
-document.getElementById("demo42").innerHTML = Math.floor(Math.random() * 10);
-// 
-let text = "More than 1000 times";
-let pattern = /[0-9]/g;
 
-let result = text.match(pattern);
- 
+
+function getRndInteger(min, max) {
+  return Math.floor(Math.random() * (max - min + 1) ) + min;
+}
