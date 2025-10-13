@@ -280,7 +280,15 @@ document.getElementById("demo41").innerHTML =
 "<p><b>Math.LOG2E:</b> " + Math.LOG2E + "</p>" +
 "<p><b>Math.Log10E:</b> " + Math.LOG10E + "</p>";
 
-
 function getRndInteger(min, max) {
   return Math.floor(Math.random() * (max - min + 1) ) + min;
 }
+// #day16 RegExp javascript 
+let thisworld ="hello, my name is Joshua";
+let pattern =/Billy/; 
+if (pattern.test(thisworld)){
+    console.log("pattern found");
+} else{
+    console.log("pattern not found!");
+}
+document.getElementById("thisworld").innerHTML =thisworld;
