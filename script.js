@@ -284,8 +284,9 @@ function getRndInteger(min, max) {
   return Math.floor(Math.random() * (max - min + 1) ) + min;
 }
 // #day16 RegExp javascript 
+
 let thisworld ="hello, my name is Joshua";
-let pattern =/Billy/; 
+let pattern =/Billy/;  
 if (pattern.test(thisworld)){
     console.log("pattern found");
 } else{
