@@ -293,3 +293,12 @@ if (pattern.test(thisworld)){
     console.log("pattern not found!");
 }
 document.getElementById("thisworld").innerHTML =thisworld;
+
+let email = "joshua@gmail.com";
+let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+if (emailPattern.test(email)) {
+  console.log("Valid email ✅");
+} else {
+  console.log("Invalid email ❌");
+}
