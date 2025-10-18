@@ -305,4 +305,11 @@ if (emailpattern.test(email)){
     console.log("invalid email");
 }
 document.getElementById("demoemail").innerHTML = email;
+// #day17 with javascript functions
+
+function greetUser(name="Guest"){
+    return `welcome ${name} to our website!`;
+}
+document.getElementById("demo43").innerHTML = greetUser("joshua");
+document.getElementById("demo44").innerHTML = greetUser();
 
