@@ -296,3 +296,13 @@ if (pattern.test(thisworld)){
 }   
 document.getElementById("thisworld").innerHTML =thisworld;
 
+let email ="billyjoshuaishimwe@gmail.com";
+let emailpattern =/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+if (emailpattern.test(email)){
+    console.log("valid email");
+} else {
+    console.log("invalid email");
+}
+document.getElementById("demoemail").innerHTML = email;
+
