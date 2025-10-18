@@ -250,7 +250,7 @@ const person4 ={
     lastname:"joshua",
     age:25,
     eyecolor:"brown"
-};
+}; 
 let txt5 ="";
 for (const [key, value] of Object.entries(person4)) {
   txt5 += key + ' = ' + value + '<br>';
@@ -286,19 +286,13 @@ function getRndInteger(min, max) {
 // #day16 RegExp javascript 
 
 let thisworld ="hello, my name is Joshua";
-let pattern =/Billy/;  
+let pattern =/Billy/; 
+
 if (pattern.test(thisworld)){
     console.log("pattern found");
-} else{
-    console.log("pattern not found!");
-}
+    thisworld ="found Billy";
+} else {
+    thisworld ="Billy not found"; 
+}   
 document.getElementById("thisworld").innerHTML =thisworld;
 
-let email = "joshua@gmail.com";
-let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-if (emailPattern.test(email)) {
-  console.log("Valid email ✅");
-} else {
-  console.log("Invalid email ❌");
-}
