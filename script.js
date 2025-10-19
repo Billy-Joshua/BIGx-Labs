@@ -293,7 +293,7 @@ if (pattern.test(thisworld)){
     thisworld ="found Billy";
 } else {
     thisworld ="Billy not found"; 
-}   
+}   gi
 document.getElementById("thisworld").innerHTML =thisworld;
 
 let email ="billyjoshuaishimwe@gmail.com";
