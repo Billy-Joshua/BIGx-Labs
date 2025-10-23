@@ -60,7 +60,7 @@ let answer3 = "he is called 'Joshua'";
 document.getElementById("demo7").innerHTML =answer1 + "<br>" + answer2 + "<br>" + answer3;
 document.getElementById("demo8").innerHTML = "hello joshua";
 
-// escape character
+
 let text1 =
 
 `The quick
@@ -305,4 +305,4 @@ if (emailpattern.test(email)){
     console.log("invalid email");
 }
 document.getElementById("demoemail").innerHTML = email;
-// #day17 with javascript functionsg
+// #day17 with javascript functionsggit
