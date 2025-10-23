@@ -16,7 +16,6 @@ const person1={};
 
     // DISPLAY data from object
 document.getElementById("demo3").innerHTML = person1.firstname +" is " + person1.age + " years old and has " + person1.eyecolor + " eyes.";
-// create an object
 
 const people = new Object ({
         firstname: "john",
