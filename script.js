@@ -1,14 +1,5 @@
 
-// still learning js thought creating object
-const person ={
-    firstname:"billy",
-    lastname:"joshua",
-    age:25,
-    eyecolor:"browon"
-};
-document.getElementById("demo2").innerHTML = person.firstname +" is " + person.age + " years old and has " + person.eyecolor + " eyes.";
-
-const person1={};
+// javascript objects
     person1.firstname="john",
     person1.lastname="doe",
     person1.age=30,
