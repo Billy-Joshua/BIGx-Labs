@@ -304,4 +304,3 @@ if (emailpattern.test(email)){
     console.log("invalid email");
 }
 document.getElementById("demoemail").innerHTML = email;
-// #day17 with javascript functionsggit
