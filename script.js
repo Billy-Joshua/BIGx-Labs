@@ -1,4 +1,5 @@
-
+// javascript learning jurnal
+let person1 = {};
 // javascript objects
     person1.firstname="john",
     person1.lastname="doe",
@@ -12,7 +13,7 @@ const people = new Object ({
         firstname: "john",
         lastname: "doe",
         age: 50,
-        id:5566,
+        id:5566,        
         eyecolor: "blue",
         fullname: function(){
             return this.firstname + " " + this.lastname;
@@ -285,13 +286,3 @@ if (pattern.test(thisworld)){
     thisworld ="Billy not found"; 
 }   gi
 document.getElementById("thisworld").innerHTML =thisworld;
-
-let email ="billyjoshuaishimwe@gmail.com";
-let emailpattern =/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-if (emailpattern.test(email)){
-    console.log("valid email");
-} else {
-    console.log("invalid email");
-}
-document.getElementById("demoemail").innerHTML = email;
