@@ -1,4 +1,4 @@
-// javascript learning jurnal
+//
 let person1 = {};
 // javascript objects
     person1.firstname="john",
@@ -270,5 +270,5 @@ if (pattern.test(thisworld)){
     thisworld ="found Billy";
 } else {
     thisworld ="Billy not found"; 
-}   gi
-document.getElementById("thisworld").innerHTML =thisworld;
+}  
+    document.getElementById("thisworld").innerHTML =thisworld;
