@@ -260,7 +260,7 @@ const person5 ={
     }
 }
 document.getElementById("demo40").innerHTML = person5.fullname();
-// #day16 RegExp javascript
+
 
 let thisworld ="hello, my name is Joshua";
 let pattern =/Billy/; 
