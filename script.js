@@ -219,8 +219,7 @@ track(Ringo);
 track(Paul);
 track(Paul);
 track(John);
-
-// Function to track visitors
+track(George);
 function track(visitor) {
   let count = visitsCount.get(visitor) || 0;
   count++;
