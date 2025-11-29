@@ -235,7 +235,6 @@ for (const [key, value] of goods.entries()) {
   text4 += key + ' = ' + value + '<br>';
 }
 document.getElementById("demo38").innerHTML = text4;
-// DAY 12 WITH JAVASCRIPTls
 const person4 ={
     firstname:"billy",
     lastname:"joshua",
