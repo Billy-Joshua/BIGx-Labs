@@ -265,6 +265,7 @@ document.getElementById("demo40").innerHTML = person5.fullname();
 let thisworld ="hello, my name is Joshua";
 let pattern =/Billy/; 
 
+
 if (pattern.test(thisworld)){
     console.log("pattern found");
     thisworld ="found Billy";
